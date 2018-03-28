@@ -30,7 +30,8 @@ Include images of your wireframes.
 
 [Wireframes](images/4-leaf-clover-wireframe.jpg?raw=true "Wireframes")
 
-## Priority Matrix                    
+## Priority Matrix     
+[PriorityMatrix](4-leaf-clover-priority-matrix?raw=true "PriorityMatrix")               
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.
 
@@ -67,10 +68,10 @@ Some sort of "play again" button to reset the game...
 ## MVP 
 
 Include the full list of features that will be part of your MVP 
-A landing page
-Two game pages (thinking of it as different levels)
-A score log
-Highest Scores log if time permits
+A landing page introducing the game, gameplay instructions and a button to "begin game"...
+For now, a single level with one particle type (i.e. snow or rain) that you must circumvent to you catch a four-leaf clover.
+Include a scorecard that will be visible when playing the game, so that you can keep track of how many clovers you have caught.
+Once you're finished with that level, a log of previous "highest-scores" that you can compare yourself to.
 
 ## POST MVP
 Flesh out more levels to the game, enough to maybe wrap into an app...
@@ -87,8 +88,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | Landing Page | H |  2-3hrs | :---: | :---: |
-| Actual Game Page | H | 10hrs+| :---: | :---: |
-| Score-card/Highest Score |  | H | 3-4hrs | :---: | :---:
+| Background Images/Gifs for Game Page | M | 1hr| :---: | :---: |
+| Adding Particles/Elements | H |  3-4hrs | :---: | :---: |
+| Create Event Listeners/Click Event/Logic Around Particles | H |  5-7hrs | :---: | :---: |
+| Add Alloted Time On Level 1 | H |  1-2hrs | :---: | :---: |
+| Add Scorecard | H | 1-2hrs | :---: | :---:
+| Add Highest Scores Table | H |  1-2hrs | :---: | :---: |
+
+
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
