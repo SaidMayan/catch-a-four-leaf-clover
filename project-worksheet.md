@@ -31,7 +31,7 @@ Include images of your wireframes.
 [Wireframes](images/4-leaf-clover-wireframe.jpg?raw=true "Wireframes")
 
 ## Priority Matrix     
-[PriorityMatrix](4-leaf-clover-priority-matrix?raw=true "PriorityMatrix")               
+[PriorityMatrix](images/4-leaf-clover-priority-matrix?raw=true "PriorityMatrix")               
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.
 
