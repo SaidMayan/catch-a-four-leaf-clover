@@ -38,8 +38,8 @@ body{
   opacity: .6;
   /*transform: rotate(315deg);*/
   position: absolute;
-  transition: 1s;
-  -webkit-animation: rotatingClovers 1s linear infinite;
+  transition: 1.5s;
+  -webkit-animation: rotatingClovers 4s linear infinite;
   infinite linear;
 }
 
@@ -48,16 +48,16 @@ body{
         -webkit-transform: rotate(0deg);
     }
     20% {
-        -webkit-transform: rotate(45deg);
+        -webkit-transform: rotate(90deg);
     }
     40% {
         -webkit-transform: rotate(-90deg);
     }
     60% {
-        -webkit-transform: rotate(22.5deg);
+        -webkit-transform: rotate(90deg);
     }
     80% {
-        -webkit-transform: rotate(-112.5deg);
+        -webkit-transform: rotate(-90deg);
     }
     100% {
         -webkit-transform: rotate(0deg);
