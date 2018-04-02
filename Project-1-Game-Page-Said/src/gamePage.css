@@ -4,11 +4,15 @@ body{
   overflow: hidden;
   background: url('images/SR-Crown-Hall-Ludwig-Mies-van-der-Rohe.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Miller Banner Light', sans-serif;
 }
 
-.rain
-{
+@font-face {
+    font-family:'Miller Banner Light';
+    src: url('miller-banner-light.ttf')
+}
+
+.rain{
  height: 100vh;
  background-image:url('images/purple-rain.png');
  animation: rain .7s linear infinite;
@@ -34,21 +38,33 @@ body{
   opacity: .6;
   /*transform: rotate(315deg);*/
   position: absolute;
-  transition: 2.5s;
-  -webkit-animation: rotation 2s
+  transition: 1s;
+  -webkit-animation: rotatingClovers 1s linear infinite;
   infinite linear;
 }
 
-@-webkit-keyframes rotation {
-    from {
+@-webkit-keyframes rotatingClovers {
+    0% {
         -webkit-transform: rotate(0deg);
     }
-    to {
-        -webkit-transform: rotate(359deg);
+    20% {
+        -webkit-transform: rotate(45deg);
+    }
+    40% {
+        -webkit-transform: rotate(-90deg);
+    }
+    60% {
+        -webkit-transform: rotate(22.5deg);
+    }
+    80% {
+        -webkit-transform: rotate(-112.5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
     }
 }
 
-/*rotation keyframe sourced from: https://codepen.io/vitoralberto/pen/OPYyYB*/
+/*original rotation keyframe sourced from: https://codepen.io/vitoralberto/pen/OPYyYB*/
 
 .scorecard{
   color: white;
@@ -68,7 +84,7 @@ h2{
   /*font-family: Helvetica, Arial, sans-serif;*/
   background: black;
   margin: auto;
-  padding: 0px 90px 50px 70px;
+  padding: 0px 50px 75px 50px;
   color: white;
   position:absolute;
   top: 0;
@@ -77,7 +93,7 @@ h2{
   right: 0;
   border-radius: 15px;
   height: 200px;
-  width: 250px;
+  width: 280px;
   z-index: 1;
   align: center;
   animation: fromRight 3s;

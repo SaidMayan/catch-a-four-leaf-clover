@@ -1,7 +1,12 @@
 body{
-  background-image:url("Lafayette-Park-Ludwig-Mies-van-der-Rohe.jpg");
+  background-image:url('Lafayette-Park-Ludwig-Mies-van-der-Rohe.jpg');
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+    font-family:'Miller Banner Light';
+    src: url('miller-banner-light.ttf')
 }
 
 .playGameButton{
@@ -23,15 +28,11 @@ body{
 }
 
 .nameOfTheGame{
-  font-family: Helvetica, Arial, sans-serif;
-  color: #5A0683;
+  font-family: 'Miller Banner Light', sans-serif;
+  color: #11C3C9;
   position: absolute;
   left: 60px;
   z-index: 1;
-  border-right: solid;
-  border-left: solid;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .einstein{
@@ -40,12 +41,12 @@ body{
   opacity: .2;
   height: 600px;
   width: auto;
-  border-top: solid green;
-  border-left: solid green;
+  border-top: solid #DFDD4C;
+  border-left: solid #DF4C4C;
 }
 
 .gameInstructions{
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Miller Banner Light', sans-serif;
   color: black;
   position: absolute;
   bottom: 300px;
