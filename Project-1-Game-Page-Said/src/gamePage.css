@@ -1,0 +1,88 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: url('images/SR-Crown-Hall-Ludwig-Mies-van-der-Rohe.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.rain
+{
+ height: 100vh;
+ background-image:url('images/purple-rain.png');
+ animation: rain .7s linear infinite;
+ z-index: -.5;
+}
+
+@keyframes rain
+{
+ 0% {
+  background-position: 0% 0%;
+ }
+ 50% {
+  background-position: 10% 50%;
+ }
+ 100%{
+  background-position: 20% 100%;
+ }
+}
+
+.clover-image{
+  width: auto;
+  height: 50px;
+  opacity: .6;
+  /*transform: rotate(315deg);*/
+  position: absolute;
+  transition: 2.5s;
+  -webkit-animation: rotation 2s
+  infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+/*rotation keyframe sourced from: https://codepen.io/vitoralberto/pen/OPYyYB*/
+
+.scorecard{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 75px;
+}
+
+h2{
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.hsForm{
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  background: black;
+  margin: auto;
+  padding: 0px 90px 50px 70px;
+  color: white;
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15px;
+  height: 200px;
+  width: 250px;
+  z-index: 1;
+  align: center;
+  animation: fromRight 3s;
+}
+
+@keyframes fromRight {
+  from {right: -2000px;}
+}

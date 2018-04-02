@@ -1,0 +1,55 @@
+body{
+  background-image:url("Lafayette-Park-Ludwig-Mies-van-der-Rohe.jpg");
+  padding: 0;
+  margin: 0;
+}
+
+.playGameButton{
+  position: absolute;
+  right: 30px;
+  bottom: 5px;
+
+}
+
+.cloverful{
+  opacity: 0.7;
+  transform: rotate(45deg);
+  /*position: absolute;
+  right: 30px;
+  bottom: 5px;*/
+  width: auto;
+  height: 200px;
+  z-index: 1;
+}
+
+.nameOfTheGame{
+  font-family: Helvetica, Arial, sans-serif;
+  color: #5A0683;
+  position: absolute;
+  left: 60px;
+  z-index: 1;
+  border-right: solid;
+  border-left: solid;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.einstein{
+  position: absolute;
+  right: 0px;
+  opacity: .2;
+  height: 600px;
+  width: auto;
+  border-top: solid green;
+  border-left: solid green;
+}
+
+.gameInstructions{
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  position: absolute;
+  bottom: 300px;
+  right: 40px;
+  font-size: 23px;
+  font-weight: bold;
+}
