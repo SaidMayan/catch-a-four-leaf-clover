@@ -21,7 +21,7 @@ Use this section to describe your final project and perhaps any links to relevan
 
 🍀 CATCH A FOUR-LEAF CLOVER 🍀
 
-CATCH A FOUR-LEAF CLOVER is the name of the game. Gameplay is straightforward; there will be various particles (snow, rain, different leaves) being stirred by the wind. Goal is to find four-leaf clovers amongst them and gather them (using mousepad to control one’s movement and mouseClick to catch them and add +1 to your score). The more clovers you catch, the greater your luck and the higher your score. There will be a 60 sec duration for how many clovers one can find. A highest-scores (think arcade-style) will always be present on the side to make you want to challenge the best-doers. Because of my deep-rooted love for architecture and nature, I will use various background images and maybe gifs to create a sweet juxtaposition effect, with rain or snow and wind (using CSS and animations to create those) to create a messy atmosphere, where to find a clover might be a bit of a challenge. More extreme weather conditions, i.e. higher winds, will therefore raise the level of difficulty. Humor will be integrated in some sorts for entertainment value (a poem or something to help dull the edge of looking for clovers)!
+CATCH A FOUR-LEAF CLOVER is the name of the game. Gameplay is straightforward; there will be various particles (snow, rain, different leaves) being stirred by the wind. Goal is to find four-leaf clovers amongst them and gather them (using mousepad to control one’s movement and mouseClick to catch them and add +1 to your score). The more clovers you catch, the greater your luck and the higher your score. There will be a 60 sec duration for how many clovers one can find. A highest-scores (think arcade-style) will always be present on the side to make you want to challenge the best-doers. Because of my deep-rooted love for architecture and nature, I will use various background images and maybe gifs to create a sweet juxtaposition effect, with rain or snow and wind (using CSS and animations to create those) to create a messy atmosphere, where to find a clover might be a bit of a challenge. More extreme weather conditions, i.e. higher winds, will therefore raise the level of difficulty. Humor will be integrated (post MVP) in some sorts for entertainment value (a poem or something to help dull the edge of looking for clovers)!
 
 
 ## Wireframes
@@ -37,7 +37,7 @@ Include a full list of features that have been prioritized based on the `Time an
 
 1: Create a groovy landing page, for now thinking of somthing similar to <a href="https://www.google.com/search?q=beatles+sgt+pepper+album&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjH9IqB8Y7aAhUDneAKHZD4CdwQ_AUIDCgD&biw=1210&bih=738#imgrc=Dv64ktmopujILM">The Beatles Sgt Pepper Album cover</a>, in terms of kookiness.
 
-2: For the project, my goal is to have at least two different levels to incorportate where in each level there will a separate background image or gif to and different weather conditions. I will have to create some sort rain, snow, or wind-blown particles conditions (my plan is to use CSS for those).
+2: For the overall project, my goal is to have at least two different levels to incorportate where in each level there will a separate background image or gif to and different weather conditions. I will have to create some sort rain, snow, or wind-blown particles conditions (my plan is to use CSS for those).
 
 3: Create a way to keep score as you play and to log highest-scores, so to have players try to one-up one another...
 
@@ -87,39 +87,48 @@ Logic will be to add event listeners to a moving object, don't know how hard tha
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. 
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| Landing Page | H |  2-3hrs | :---: | :---: |
-| Background Images/Gifs for Game Page | M | 1hr| :---: | :---: |
-| Adding Particles/Elements | H |  3-4hrs | :---: | :---: |
-| Create Event Listeners/Click Event/Logic Around Particles | H |  5-7hrs | :---: | :---: |
-| Add Alloted Time On Level 1 | H |  1-2hrs | :---: | :---: |
-| Add Scorecard | H | 1-2hrs | :---: | :---:
-| Add Highest Scores Table | H |  1-2hrs | :---: | :---: |
+| Landing Page | H |  2-3hrs | 2hrs | 2hrs |
+| Background Images/Gifs for Game Page | M | 1hr| >1hr | 1hr |
+| Adding Particles/Elements | H |  3-4hrs | 4hrs | 4hrs |
+| Create Event Listeners/Click Event/Logic Around Particles | H |  5-7hrs | 7-8hrs | 8hrs |
+| Add Alloted Time On Level 1 | H |  1-2hrs | 1hr | 1hr |
+| Add Scorecard | H | 1-2hrs | 2hrs | 2hrs
+| Add Highest Scores Table | H |  1-2hrs | 2hrs | 2hrs |
 
 
 
 ## Helper Functions
-Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+Helper functions should be generic enough that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
 
 | Function | Description | 
-| --- | :---: |  
-| Capitalize | This will capitalize the first letter in a string | 
+| timer | Adds a timer to a page with if statements dependent upon game conditions |  
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Use this section to list all supporting libraries and thier role in the project.
+ I downloaded and incorportated the Miller Banner Light font (miller-banner-light.ttf) to my game throughout, to match the Modernist theme throughout the game.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.
+Simplicity is key. Here I made a scorecard being held by the x variable. If a player clicks on a clover, it will counter x +1. Logic was much simpler than what I assumed initially.
+
+let x = 0; // making scorecard, where x variable holds the score
+$('.divForClovers').on('click', function(event){
+$(this).remove();
+x++;
+$('.scorecard').text(`score: ${x}`);
 
 ## jQuery Discoveries
  Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
+ location.reload(); // allowed me to do a simple reset of the game if the player is unhappy with their score.
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+ Use this section to document what changes were made and the reasoning behind those changes.
+ The game developed and evolved within the vision I had going into it. Instead of adding a colorful, natural backdrop, I chose instead to work with black-and-white, Modernist backdrops to create an interesting contrast effect with the colored particles (rain and clovers)...
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
-
+ 
 #### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+Fitting a background image comfortable onto the game was merely trial and error.
+I had to add a height to eliminate any unnecessary whitespace.
