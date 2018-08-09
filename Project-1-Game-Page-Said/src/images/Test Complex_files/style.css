@@ -1,0 +1,168 @@
+.container {
+  width: 1200px;
+  height: 300px;
+  background-size: cover;
+  margin: auto;
+  background-color: #242424;
+  position: relative;
+  transition: background ease-in;
+  cursor: pointer;
+}
+
+.collapseText {
+  width: 100%;
+  height: 100%;
+  display: inline;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 168px;
+  right: 0;
+  z-index: 1;
+}
+
+.collapseText:hover {
+  text-decoration: underline;
+  text-decoration-color: #D4AF37
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color:rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.wakeUpAndLive {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: moveDownWake 5s ease forwards;
+  opacity: 0;
+/*  background-image: url(./images/wake-up-and-live.png);*/
+}
+
+ @keyframes moveDownWake {
+  40% {top:-20px; opacity: 0;}
+  70% {top:0px; opacity: 1;}
+  80% {top:0px; opacity: 1}
+  85% {top:0px; opacity: 1}
+}
+
+.aliveInCalifornia {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: -20px;
+  left: -8%;
+  animation: moveDownAlive 5s ease forwards;
+  opacity: 0;
+}
+
+ @keyframes moveDownAlive {
+  10% {top:-40px; opacity: 0;}
+  30% {top:-20px; opacity: 1;}
+  50% {top:-20px; opacity: 1;}
+  70% {top:-20px; opacity: 1;}
+}
+
+
+.nixon {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: -20px;
+  right: -6%;
+  animation: moveDownNixon 5s ease forwards;
+  opacity: 0;
+}
+
+ @keyframes moveDownNixon {
+  30% {top:-40px; opacity: 0;}
+  50% {top:-20px; opacity: 1;}
+  70% {top:-20px; opacity: 1;}
+}
+
+.overlay2 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #242424;
+  opacity: .91;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.nixonWatch {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  0% { opacity: 0;}
+}
+
+.theDiplomat {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  animation: fadeinDiplomat 5s ease forwards;
+}
+
+@keyframes fadeinDiplomat {
+    0% { opacity: 0;}
+    25% { opacity: 0; }
+}
+
+.shopNow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  animation: fadeinShopNow 5s ease forwards;
+}
+
+@keyframes fadeinShopNow {
+    0% { opacity: 0;}
+    50% { opacity: 0; }
+}
+
+.nixonCopy {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  opacity: 1;
+  animation: fadeinNixonCopy 5s ease forwards;
+}
+
+@keyframes fadeinNixonCopy {
+  0% {
+    opacity: 0;
+  }
+  75% {
+      top:-15px;
+      opacity: 0;
+    }
+}
+

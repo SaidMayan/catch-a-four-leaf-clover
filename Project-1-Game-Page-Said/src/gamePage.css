@@ -40,7 +40,7 @@ body{
   opacity: .6;
   /*transform: rotate(315deg);*/
   position: absolute;
-  transition: 1.5s;
+  transition: 2.5s;
   -webkit-animation: rotatingClovers 4s linear infinite;
   infinite linear;
 }
